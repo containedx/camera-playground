@@ -10,6 +10,7 @@ public class SimpleActorMovement : MonoBehaviour
     private void Update()
     {
         MoveLeftRight();
+        MoveUpDown();
     }
 
     private void MoveLeftRight()
@@ -25,6 +26,24 @@ public class SimpleActorMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
             currentPosition.x -= speed * Time.deltaTime;
+        }
+
+        transform.position = currentPosition;
+    }
+
+    private void MoveUpDown()
+    {
+        Vector3 currentPosition = transform.position;
+
+        if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
+        {
+            currentPosition.y += speed * Time.deltaTime;
+        }
+
+
+        if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
+        {
+            currentPosition.y -= speed * Time.deltaTime;
         }
 
         transform.position = currentPosition;
