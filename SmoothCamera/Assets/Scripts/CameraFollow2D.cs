@@ -10,12 +10,16 @@ public class CameraFollow2D : MonoBehaviour
     
     private void LateUpdate()
     {
+        FollowTarget();
+    }
+
+    private void FollowTarget()
+    {
         Vector3 targetPosition = target.position;
-        targetPosition.z = transform.position.z; 
+        targetPosition.z = transform.position.z;
 
         Vector3 nextPos = Vector3.Lerp(transform.position, targetPosition, Time.deltaTime * speed);
 
-        // Update the camera's position
         transform.position = nextPos;
     }
 }
