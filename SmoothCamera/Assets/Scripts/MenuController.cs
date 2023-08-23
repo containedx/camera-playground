@@ -8,6 +8,12 @@ public class MenuController : MonoBehaviour
     private const string SCENE_2D = "SampleScene";
     private const string SCENE_3D = "3dScene";
 
+    private void Start()
+    {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+    }
+
     public void Load2dScene()
     {
         ChangeScene(SCENE_2D);

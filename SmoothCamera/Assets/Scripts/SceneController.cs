@@ -8,6 +8,12 @@ public class SceneController : MonoBehaviour
 
     private const string MAIN_MENU = "MainScene";
 
+    private void Start()
+    {
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+
     private void Update()
     {
         HandleEscape();
