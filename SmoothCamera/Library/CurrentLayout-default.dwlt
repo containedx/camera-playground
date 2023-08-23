@@ -76,7 +76,7 @@ MonoBehaviour:
   m_MinSize: {x: 677, y: 492}
   m_MaxSize: {x: 14001, y: 14042}
   vertical: 0
-  controlID: 106
+  controlID: 128
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -220,7 +220,7 @@ MonoBehaviour:
   m_MinSize: {x: 402, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 107
+  controlID: 58
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -245,7 +245,7 @@ MonoBehaviour:
   m_MinSize: {x: 402, y: 221}
   m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
-  controlID: 108
+  controlID: 59
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -394,7 +394,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 14630
+  m_LastSelectedObjectID: -3820
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -498,20 +498,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/scene3D
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 75
   m_LastFolders:
-  - Assets/Scripts/scene3D
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\MY PROGRAMMING PROJECTS\UNITY\2023\studious-doodle\SmoothCamera
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: a83b0000
-    m_LastClickedID: 15272
-    m_ExpandedIDs: 000000009c3b0000a43b000000ca9a3b
+    m_SelectedIDs: a43b0000
+    m_LastClickedID: 15268
+    m_ExpandedIDs: 000000009c3b0000a63b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -664,7 +664,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 58fbffff
+      m_ExpandedIDs: faecffff88edffff92edffff9cedffffa6edffffb0edfffffaedffff04eeffff0eeeffff6ceeffffcaeeffffd4eeffffe8eeffff3aefffffecf1ffffcaf6ffffbef7ffff3ef8ffffa6faffffacfaffff66fbffffb094000018950000909d0000cc9d0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -724,9 +724,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.8555516, y: 0.92679244, z: -4.4922695}
+    m_Target: {x: 343.89505, y: 351.0915, z: 55.022644}
     speed: 2
-    m_Value: {x: 0.8555516, y: 0.92679244, z: -4.4922695}
+    m_Value: {x: 343.89505, y: 351.0915, z: 55.022644}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -772,20 +772,20 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.051977117, y: 0.93721163, z: -0.15925181, w: -0.30598468}
+    m_Target: {x: 0.08327967, y: -0.08655075, z: -0.007274973, w: -0.9927699}
     speed: 2
-    m_Value: {x: -0.051975686, y: 0.9371858, z: -0.15924743, w: -0.30597624}
+    m_Value: {x: 0.08327669, y: -0.08654766, z: -0.007274713, w: -0.9927344}
   m_Size:
-    m_Target: 1.2247449
+    m_Target: 476.50085
     speed: 2
-    m_Value: 1.2247449
+    m_Value: 476.50085
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
   m_CameraSettings:
-    m_Speed: 1
-    m_SpeedNormalized: 0.49999997
+    m_Speed: 2
+    m_SpeedNormalized: 1
     m_SpeedMin: 0.01
     m_SpeedMax: 2
     m_EasingEnabled: 1
