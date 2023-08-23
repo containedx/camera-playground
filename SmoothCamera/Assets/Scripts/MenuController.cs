@@ -24,6 +24,16 @@ public class MenuController : MonoBehaviour
         ChangeScene(SCENE_3D);
     }
 
+    public void Show(GameObject gameObject)
+    {
+        gameObject.SetActive(true);
+    }
+
+    public void Hide(GameObject gameObject)
+    {
+        gameObject.SetActive(false);
+    }
+
 
     private void ChangeScene(string sceneName)
     {
