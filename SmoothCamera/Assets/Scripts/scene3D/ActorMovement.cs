@@ -6,8 +6,13 @@ public class ActorMovement : MonoBehaviour
 {
 
     public CharacterController characterController;
+
     public float speed = 15.0f;
-    public float rotationSpeed = 5.0f;
+
+    public float rotationSpeed = 50.0f;
+    public float mouseSensitivity = 3.0f;
+
+    private float targetHorizontalRotation;
     
     private void Update()
     {
@@ -17,7 +22,6 @@ public class ActorMovement : MonoBehaviour
 
     private void Move()
     {
-        float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
 
         Vector3 direction = transform.forward * vertical;
@@ -32,7 +36,11 @@ public class ActorMovement : MonoBehaviour
     {
         float mouseX = Input.GetAxis("Mouse X");
 
-        Vector3 newRotation = transform.eulerAngles + new Vector3(0f, mouseX * rotationSpeed, 0f);
-        transform.eulerAngles = newRotation;
+        targetHorizontalRotation += mouseX * mouseSensitivity;
+        Vector3 newRotation = new Vector3(0f, targetHorizontalRotation, 0f);
+
+        Quaternion targetRotation = Quaternion.Euler(newRotation);
+
+        transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
     }
 }
