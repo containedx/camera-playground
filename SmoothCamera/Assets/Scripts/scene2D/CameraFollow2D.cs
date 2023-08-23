@@ -5,12 +5,14 @@ using UnityEngine;
 public class CameraFollow2D : MonoBehaviour
 {
     public Transform target;
-    public float speed = 2.0f;
+    public float speed = 5.0f;
+    public float rotationSpeed = 10.0f;
 
 
     private void LateUpdate()
     {
         FollowTarget();
+        FollowRotation();
     }
 
 
@@ -28,5 +30,10 @@ public class CameraFollow2D : MonoBehaviour
 
         Vector3 nextPos = Vector3.Lerp(transform.position, targetPosition, Time.deltaTime * speed);
         transform.position = nextPos;
+    }
+
+    private void FollowRotation()
+    {
+        transform.rotation = Quaternion.Slerp(transform.rotation, target.rotation, 10.0f * Time.deltaTime);
     }
 }

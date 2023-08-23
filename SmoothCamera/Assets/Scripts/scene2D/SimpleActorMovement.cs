@@ -5,12 +5,26 @@ using UnityEngine;
 public class SimpleActorMovement : MonoBehaviour
 {
     public float speed = 5.0f;
-
+    public float rotationSpeed = 10000.0f;
 
     private void Update()
     {
         MoveLeftRight();
         MoveUpDown();
+        Rotate();
+    }
+
+    private void Rotate()
+    {
+        if (Input.GetKey(KeyCode.Q))
+        {
+            transform.Rotate(Vector3.forward, rotationSpeed * Time.deltaTime);
+        }
+
+        if (Input.GetKey(KeyCode.E))
+        {
+            transform.Rotate(Vector3.back, rotationSpeed * Time.deltaTime);
+        }
     }
 
     private void MoveLeftRight()
