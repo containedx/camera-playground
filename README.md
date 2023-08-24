@@ -2,6 +2,8 @@
 
 [Demo](Demo) - contains executable demo to try out [SmoothCamera.exe](Demo/SmoothCamera.exe)
 
+![](Demo/recordings/menu.gif) 
+
 ### 2D scene
 
 [code](SmoothCamera/Assets/Scripts/scene2D) - `CameraFollow2D` - `SimpleActorMovement`
