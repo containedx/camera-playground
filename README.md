@@ -2,6 +2,8 @@
 
 [Demo](Demo) - contains executable demo to try out [SmoothCamera.exe](Demo/SmoothCamera.exe)
 
+Small project, containing 2 scenes with different showcases of cameraand movement. 
+
 ![](Demo/recordings/menu.gif) 
 
 ### 2D scene
