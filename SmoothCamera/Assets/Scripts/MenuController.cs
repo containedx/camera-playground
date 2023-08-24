@@ -10,8 +10,7 @@ public class MenuController : MonoBehaviour
 
     private void Start()
     {
-        Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.None;
+        ShowAndUnLockCursor();
     }
 
     private void Update()
@@ -51,5 +50,11 @@ public class MenuController : MonoBehaviour
         {
             Application.Quit();
         }
+    }
+
+    private void ShowAndUnLockCursor()
+    {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
     }
 }

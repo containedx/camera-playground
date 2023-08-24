@@ -22,9 +22,6 @@ public class CameraFollow2D : MonoBehaviour
         targetPosition.z = transform.position.z;
 
         var distance = Vector3.Distance(targetPosition, transform.position);
-
-        //Debug.Log(distance);
-
         if (distance <= 0.1f)
             return;
 
@@ -34,6 +31,10 @@ public class CameraFollow2D : MonoBehaviour
 
     private void FollowRotation()
     {
+        var angle = Quaternion.Angle(transform.rotation, target.rotation);
+        if ( angle <= 0.1f)
+            return;
+
         transform.rotation = Quaternion.Slerp(transform.rotation, target.rotation, 10.0f * Time.deltaTime);
     }
 }

@@ -10,8 +10,7 @@ public class SceneController : MonoBehaviour
 
     private void Start()
     {
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
+        HideAndLockCursor();
     }
 
     private void Update()
@@ -27,4 +26,9 @@ public class SceneController : MonoBehaviour
         }
     }
 
+    private void HideAndLockCursor()
+    {
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+    }
 }
