@@ -14,6 +14,11 @@ public class MenuController : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
     }
 
+    private void Update()
+    {
+        HandleEscape();
+    }
+
     public void Load2dScene()
     {
         ChangeScene(SCENE_2D);
@@ -40,5 +45,11 @@ public class MenuController : MonoBehaviour
         SceneManager.LoadScene(sceneName);
     }
 
-    
+    private void HandleEscape()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+    }
 }

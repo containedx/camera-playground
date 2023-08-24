@@ -7,7 +7,7 @@ public class ActorMovement : MonoBehaviour
 
     public CharacterController characterController;
 
-    public float speed = 15.0f;
+    public float speed = 30.0f;
 
     public float rotationSpeed = 50.0f;
     public float mouseSensitivity = 3.0f;
